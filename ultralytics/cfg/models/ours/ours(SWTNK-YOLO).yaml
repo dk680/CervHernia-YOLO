@@ -1,0 +1,37 @@
+# yolov10_custom.yaml
+
+nc: 9  # number of classes
+scales:  # model compound scaling constants
+  n: [ 0.33, 0.25, 1024 ]
+  s: [ 0.33, 0.50, 1024 ]
+  m: [ 0.67, 0.75, 768 ]
+  l: [ 1.00, 1.00, 512 ]
+  x: [ 1.00, 1.25, 512 ]
+
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, efficientnet_v2, []]# EfficientNet_v2 backbone
+  - [-1, 3, C2f_DSConv, [128, True]]
+  - [-1, 1, SPPF, [1024, 5]]      # Spatial Pyramid Pooling Fast (SPPF)
+  - [-1, 1, PSA, [1024]]          # Position-Sensitive Attention (PSA)
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 3], 1, SDI, [1]]  # Concatenate backbone features from P4
+  - [-1, 3, C2, [512]]        # C2f block for feature fusion
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 2], 1, SDI, [1]]  # Concatenate backbone features from P3
+  - [-1, 3, C2f_DSConv, [256]]        # C2f block for feature fusion (small scale)
+
+  - [-1, 1, Conv, [256, 3, 2]]  # Stride 2 convolution for downsampling
+  - [[-1, 9], 1, SDI, [1]]   # Concatenate head P4
+  - [-1, 3, C2f_DSConv, [512]]         # C2f block for medium scale (P4/16)
+
+  - [-1, 1, SCDown, [512, 3, 2]]  # SCDown for downsampling
+  - [[-1, 3], 1, SDI, []]         # SDI from second model to combine detection heads
+  - [-1, 3, C2fCIB, [1024, True, True]]  # C2fCIB block with bottleneck (P5/32)
+
+  - [[12, 15, 18], 1, Segment, [nc, 32, 256]]  # P3, P4, P5 detection
+  #- [[12, 15, 18], 1, v10Detect, [nc]] # Detect(P3, P4, P5)
+

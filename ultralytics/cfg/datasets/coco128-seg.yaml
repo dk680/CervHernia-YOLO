@@ -1,0 +1,15 @@
+train:
+val:
+test:
+# Classes
+
+names:
+  0: C2
+  1: C3
+  2: C4
+  3: C5
+  4: C6
+  5: C7
+  6: Normal_Disc
+  7: Disc_Bulge
+  8: Disc_Herniation

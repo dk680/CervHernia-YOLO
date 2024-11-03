@@ -1,0 +1,15 @@
+train: 'D:\YOLOv10\dataset\train'  # 训练图像路径
+val: 'D:\YOLOv10\dataset\test'      # 验证图像路径
+test: 'D:\YOLOv10\dataset\test' # 如果没有测试集，可以留空
+
+# Classes
+names:
+  0: C2
+  1: C3
+  2: C4
+  3: C5
+  4: C6
+  5: C7
+  6: Normal_Disc
+  7: Disc_Bulge
+  8: Disc_Herniation
