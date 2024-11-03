@@ -1,1 +1,0 @@
-# SWTNK-YOLO
