@@ -8,7 +8,7 @@ scipy>=1.13.0
 onnxslim==0.1.31
 onnxruntime-gpu==1.18.0
 gradio==4.31.5
-opencv-python==4.9.0.80
+opencv-python==4.10.0.84
 psutil==5.9.8
 py-cpuinfo==9.0.0
 huggingface-hub==0.23.2
