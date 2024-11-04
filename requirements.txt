@@ -12,6 +12,6 @@ opencv-python==4.9.0.80
 psutil==5.9.8
 py-cpuinfo==9.0.0
 huggingface-hub==0.23.2
-safetensors==0.4.3
+safetensors==0.4.5
 timm>=0.9.12
 mmcv-full>=1.6.2
