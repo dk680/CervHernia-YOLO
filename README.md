@@ -21,7 +21,7 @@ The SWTNK-YOLO model builds upon YOLOv10 by integrating several advanced techniq
 
 - **YOLOv10**: Serves as the foundational model, known for efficient object detection performance. [YOLOv10 Paper](https://arxiv.org/pdf/2405.14458)
 - **EfficientNetV2**: Optimized network architecture, providing high computational efficiency. [EfficientNetV2 Paper](https://arxiv.org/pdf/2104.00298)
-- **Shape-IoU**: Improved IoU metric for robust shape-based segmentation. [Shape-IoU Paper](https://arxiv.org/pdf/2312.17663)
+- **Shape-InnerIoU**: Improved IoU metric for robust shape-based segmentation. [Shape-InnerIoU Paper](https://arxiv.org/pdf/2312.17663，https://arxiv.org/pdf/2104.00298)
 - **SDI (Shape Deformation-Integrated)**: Allows flexible shape deformation, improving performance in complex segmentation tasks. [SDI Paper](https://arxiv.org/pdf/2311.17791v1)
 - **Dynamic Snake Convolution**: Enhanced boundary detection for precise segmentation of complex shapes. [Dynamic Snake Convolution Paper](https://arxiv.org/pdf/2307.08388)
 
@@ -74,7 +74,7 @@ The development of this model references and integrates the following research w
 
 - **YOLOv10**: [YOLOv10: A Next Generation Object Detection Model](https://arxiv.org/pdf/2405.14458)
 - **EfficientNetV2**: [EfficientNetV2: Smaller Models and Faster Training](https://arxiv.org/pdf/2104.00298)
-- **Shape-IoU**: [Shape-IoU: Robust Shape-Based IoU for Object Detection](https://arxiv.org/pdf/2312.17663)
+- **Shape-InnerIoU**: [Shape-InnerIoU: Robust Shape-Based IoU for Object Detection](https://arxiv.org/pdf/2312.17663，https://arxiv.org/pdf/2104.00298)
 - **SDI (Shape Deformation-Integrated)**: [SDI: Shape Deformation-Integrated Segmentation Model](https://arxiv.org/pdf/2311.17791v1)
 - **Dynamic Snake Convolution**: [Dynamic Snake Convolution for Boundary Detection](https://arxiv.org/pdf/2307.08388)
 
