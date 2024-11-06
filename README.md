@@ -20,7 +20,7 @@ The SWTNK-YOLO model builds upon YOLOv10 by integrating several advanced techniq
 
 - **YOLOv10**: Serves as the foundational model, known for efficient object detection performance. [YOLOv10 Paper](https://arxiv.org/pdf/2405.14458)
 - **EfficientNetV2**: Optimized network architecture, providing high computational efficiency. [EfficientNetV2 Paper](https://arxiv.org/pdf/2104.00298)
-- **Shape-InnerIoU**: Improved IoU metric for robust shape-based segmentation. [ShapeIoU Paper](https://arxiv.org/pdf/2312.17663)[InnerIoU Paper](https://arxiv.org/pdf/2311.02877)
+- **Shape-InnerIoU**: Improved IoU metric for robust shape-based segmentation. [ShapeIoU Paper](https://arxiv.org/pdf/2312.17663)，[InnerIoU Paper](https://arxiv.org/pdf/2311.02877)
 - **SDI (Shape Deformation-Integrated)**: Allows flexible shape deformation, improving performance in complex segmentation tasks. [SDI Paper](https://arxiv.org/pdf/2311.17791v1)
 - **Dynamic Snake Convolution**: Enhanced boundary detection for precise segmentation of complex shapes. [Dynamic Snake Convolution Paper](https://arxiv.org/pdf/2307.08388)
 
