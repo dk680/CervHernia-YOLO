@@ -47,7 +47,7 @@ pip install -r requirements.txt
 Clone this repository and navigate into it:
 
 ```bash
-git clone https://github.com/username/SWTNK-YOLO.git
+git clone https://github.com/username/CS-YOLO.git
 cd CS-YOLO
 ```
 
