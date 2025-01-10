@@ -1,5 +1,5 @@
 
-# CervHernia-YOLO:: Enhanced YOLOv10 Model for Cervical Spine MRI Segmentation
+# CervHernia-YOLO: Enhanced YOLOv10 Model for Cervical Spine MRI Segmentation
 
 **CervHernia-YOLO:** is an advanced instance segmentation model based on YOLOv10, specifically designed for precise segmentation of cervical MRI images. The model integrates state-of-the-art techniques to improve segmentation accuracy, making it an effective tool for diagnosing cervical spine pathologies, such as disc bulging and herniation.
 
