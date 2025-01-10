@@ -48,7 +48,7 @@ Clone this repository and navigate into it:
 
 ```bash
 git clone https://github.com/username/CS-YOLO.git
-cd CervHernia-YOLO:
+cd CervHernia-YOLO
 ```
 
 Then, install the dependencies:
