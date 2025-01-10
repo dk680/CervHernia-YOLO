@@ -1,7 +1,7 @@
 
-# CS-YOLO: Enhanced YOLOv10 Model for Cervical Spine MRI Segmentation
+# CervHernia-YOLO:: Enhanced YOLOv10 Model for Cervical Spine MRI Segmentation
 
-**CS-YOLO** is an advanced instance segmentation model based on YOLOv10, specifically designed for precise segmentation of cervical MRI images. The model integrates state-of-the-art techniques to improve segmentation accuracy, making it an effective tool for diagnosing cervical spine pathologies, such as disc bulging and herniation.
+**CervHernia-YOLO:** is an advanced instance segmentation model based on YOLOv10, specifically designed for precise segmentation of cervical MRI images. The model integrates state-of-the-art techniques to improve segmentation accuracy, making it an effective tool for diagnosing cervical spine pathologies, such as disc bulging and herniation.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 ## Introduction
 
-The CS-YOLO model builds upon YOLOv10 by integrating several advanced techniques to enhance segmentation accuracy for small, complex targets in MRI images. This model focuses on cervical spine pathology segmentation and includes the following components:
+The CervHernia-YOLO model builds upon YOLOv10 by integrating several advanced techniques to enhance segmentation accuracy for small, complex targets in MRI images. This model focuses on cervical spine pathology segmentation and includes the following components:
 
 - **YOLOv10**: Serves as the foundational model, known for efficient object detection performance. [YOLOv10 Paper](https://arxiv.org/pdf/2405.14458)
 - **EfficientNetV2**: Optimized network architecture, providing high computational efficiency. [EfficientNetV2 Paper](https://arxiv.org/pdf/2104.00298)
@@ -36,7 +36,7 @@ Each of these advancements contributes to CS-YOLO’s strong performance on benc
 
 ### Dependencies
 
-To set up SWTNK-YOLO, first install the required dependencies:
+To set up CervHernia-YOLO:, first install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -48,7 +48,7 @@ Clone this repository and navigate into it:
 
 ```bash
 git clone https://github.com/username/CS-YOLO.git
-cd CS-YOLO
+cd CervHernia-YOLO:
 ```
 
 Then, install the dependencies:
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-To run CS-YOLO on our dataset, simply use the `main.py` file. Please note that the dataset is private and not included in this repository.
+To run CervHernia-YOLO: on our dataset, simply use the `main.py` file. Please note that the dataset is private and not included in this repository.
 
 ```bash
 python main.py
