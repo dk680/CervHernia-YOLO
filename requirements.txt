@@ -9,7 +9,7 @@ onnxslim==0.1.31
 onnxruntime-gpu==1.18.0
 gradio==4.31.5
 opencv-python==4.9.0.80
-psutil==5.9.8
+psutil==7.0.0
 py-cpuinfo==9.0.0
 huggingface-hub==0.23.2
 safetensors==0.4.3
